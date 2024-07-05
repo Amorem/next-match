@@ -4,24 +4,24 @@ import Providers from "../components/Providers";
 import TopNav from "@/components/navBar/TopNav";
 
 export const metadata: Metadata = {
-  title: "Next Match",
-  description: "",
+	title: "Next Match",
+	description: "",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>
-        {" "}
-        <Providers>
-          <TopNav />
-          <main className="container mx-auto p-10"> {children}</main>
-        </Providers>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body>
+				{" "}
+				<Providers>
+					<TopNav />
+					<main className="container mx-auto"> {children}</main>
+				</Providers>
+			</body>
+		</html>
+	);
 }
