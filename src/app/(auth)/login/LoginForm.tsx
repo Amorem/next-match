@@ -24,6 +24,7 @@ export default function LoginForm() {
 		// console.log("RESULT", result);
 		if (result.status === "success") {
 			router.push("/members");
+			router.refresh();
 		} else {
 			toast.error("Invalid email or password");
 		}
